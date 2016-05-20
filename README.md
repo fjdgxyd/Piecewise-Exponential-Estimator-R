@@ -8,6 +8,6 @@ pexe() needs two numeric vector arguments. The first vector stores observed time
 It returns a list of 4; 2 vectors, 1 data frame and 1 list. Two vectors named “start” and “end”, which refer to the start and end point of an interval. The data frame is used to print failure rate within each interval. The list stores exponential function pieces for further use.
 
 •	pexefun(steP = , endvec =, funclist =)   
-pexefun() needs 3 arguments. The first is “steP”, the same “step” you used to generate a sequence of number in R. It is used to generate x values to plot PEXE. The second argument is a numeric vector named “endvec”. It is exactly the same vector we’ve got from the function pexe(). It is used as conditions for choosing which function from the function list to apply to x in the “x” vector.
+pexefun() needs 3 arguments. The first is “steP”, the same “step” you use to generate a sequence of number in R. It is used to generate x values to plot PEXE. The second argument is a numeric vector named “endvec”. It is exactly the same vector we’ve got from the function pexe(). It is used as conditions for choosing which function from the function list to apply to x in the “x” vector.
 The third argument is a list of functions pieces as mentioned before.
 This function returns a list of 2 vectors named “x” and “y”. These 2 vectors are used to plot the PEXE.
