@@ -1,7 +1,8 @@
 #Piecewise-Exponential-Estimator-R  
 I am not a professional programer. I coded this inspired by a thesis which has some sort of mistakes. And it is part of my recent school work in the course of "Survival Modeling.  
 
-I created 2 functions, “pexe()”  and “pexefun()”.  
+I created 2 functions, “pexe()”  and “pexefun()”. 
+
 •	pexe(time = , event =)
 pexe() needs two numeric vector arguments. The first vector stores observed time, excluding time “0”. The second vector stores 0s and 1s. 1: uncensored, 0: censored
 It returns a list of 4; 2 vectors, 1 data frame and 1 list. Two vectors named “start” and “end”, which refer to the start and end point of an interval. The data frame is used to print failure rate within each interval. The list stores exponential function pieces for further use.
